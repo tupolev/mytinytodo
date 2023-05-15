@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  mytinytodo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "9080:80"
+      - "9443:443"
+    volumes:
+      - ./:/src
